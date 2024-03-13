@@ -33,19 +33,19 @@
               <td>
                 <div class="row-cols-1">
                   <strong>Amount: </strong>
-                  {{item.paymentInfo[0].amount}}
+                  {{item.paymentInfo[0].amount | currency: 'Php '}}
                 </div>
                 <div class="row-cols-1">
-                  <strong>Amount: </strong>
-                  {{item.paymentInfo[0].interest}}
+                  <strong>Interest: </strong>
+                  {{item.paymentInfo[0].interest | currency: 'Php '}}
                 </div>
                 <div class="row-cols-1">
-                  <strong>Amount: </strong>
-                  {{item.paymentInfo[0].insurance}}
+                  <strong>Insurance: </strong>
+                  {{item.paymentInfo[0].insurance | currency: 'Php '}}
                 </div>
                 <div class="row-cols-1">
-                  <strong>Amount: </strong>
-                  {{item.paymentInfo[0].total}}
+                  <strong>Total: </strong>
+                  {{item.paymentInfo[0].total | currency: 'Php '}}
                 </div>
               </td>
             </tr>
